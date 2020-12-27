@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/backgroundColor"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/newly_image"
+        android:background="@color/placeholder"
+        android:scaleType="fitXY"
+        android:contentDescription="newly joined image" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/placeholder"
+        android:layout_below="@+id/newly_image"
+        android:textColor="@color/textcolor"
+        android:textAlignment="center"
+        android:id="@+id/newly_username"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:background="@color/placeholder"
+            android:layout_below="@+id/newly_username"
+            android:textColor="@color/textcolor"
+            android:textAlignment="viewStart"
+            android:id="@+id/newly_category"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:background="@color/placeholder"
+            android:layout_below="@+id/newly_category"
+            android:textColor="@color/textcolor"
+            android:textAlignment="viewStart"
+            android:id="@+id/newly_loaction"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@color/placeholder"
+            android:layout_below="@+id/newly_loaction"
+            android:textColor="@color/textcolor"
+            android:textAlignment="viewEnd"
+            android:id="@+id/newly_date"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

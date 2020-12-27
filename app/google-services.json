@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "112242964778",
+    "firebase_url": "https://jobkwetu.firebaseio.com",
+    "project_id": "jobkwetu",
+    "storage_bucket": "jobkwetu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112242964778:android:b453fb5b6a9f804efa4653",
+        "android_client_info": {
+          "package_name": "com.e.jobkwetu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112242964778-sadp2lmvgl89l58jotcvrb5v01383g14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.jobkwetu",
+            "certificate_hash": "af77d85f95aaee7c00c67130a50042beeff45d82b8"
+          }
+        },
+        {
+          "client_id": "112242964778-tn88r36rkhg5ugrddmr9solbi3ihi9o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDijJ0tEUmXS8pHwKb4yIHK-vOGj6XBgsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112242964778-tn88r36rkhg5ugrddmr9solbi3ihi9o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

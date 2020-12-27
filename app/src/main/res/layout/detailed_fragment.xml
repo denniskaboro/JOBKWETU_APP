@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_margin="@dimen/dimen_10"
+     android:orientation="vertical">
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:layout_margin="@dimen/dimen_10"
+         android:id="@+id/detailed_image"
+         android:scaleType="fitXY"
+         />
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/detailed_name"
+         android:layout_margin="@dimen/dimen_10"
+         android:lines="1"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/detailed_level"
+         android:layout_margin="@dimen/dimen_10"
+         android:lines="1"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/detailed_category"
+         android:layout_margin="@dimen/dimen_10"
+         android:lines="1"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/detailed_description"
+         android:layout_margin="@dimen/dimen_10"
+         android:lines="1"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/detailed_reviews"
+             android:textSize="20sp"
+             android:textStyle="normal"
+             android:text="Reviews"
+             android:layout_margin="@dimen/dimen_10"
+             android:lines="1"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:hint="5.0"
+             android:textSize="20sp"
+             android:layout_height="wrap_content"
+             android:id="@+id/detailed_rate"
+             android:layout_margin="@dimen/dimen_10"
+             android:fontFamily="sans-serif-condensed"/>
+         <RatingBar
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:scaleX=".5"
+             android:scaleY=".5"
+             android:id="@+id/detailed_ratting"/>
+
+
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <Button
+                 android:layout_centerInParent="true"
+                 android:backgroundTint="@color/colourgreen"
+                 android:background="@drawable/round_button"
+                 android:layout_width="wrap_content"
+                 android:padding="10dp"
+                 android:id="@+id/detailed_continue"
+                 android:textSize="16sp"
+                 android:text="CONTINUE ($10)"
+                 android:layout_margin="@dimen/dimen_10"
+                 android:layout_height="wrap_content"/>
+         </RelativeLayout>
+
+     </LinearLayout>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/detailed_review_rec"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/more"
+         android:text="People also viewed:-"
+         android:layout_margin="@dimen/dimen_10"
+         android:textSize="20sp"
+         android:fontFamily="sans-serif-black" />
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/detailed_review_rec2"/>
+ </LinearLayout>
+</ScrollView>

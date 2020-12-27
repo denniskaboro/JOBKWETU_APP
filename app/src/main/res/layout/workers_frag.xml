@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WORKERS"
+        android:textAlignment="center"
+        android:background="@drawable/background_black_bolder"
+        android:textColor="#000"
+        android:id="@+id/workers"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/trending_list"
+        android:layout_below="@+id/workers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        />
+
+
+</RelativeLayout>

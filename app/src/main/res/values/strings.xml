@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">JOBKWETU</string>
+    <string name="action_logout">logout</string>
+    <string name="share">Share App</string>
+    <string name="message">Message</string>
+    <string name="facebook_group">Facebook</string>
+    <string name="telegram_group">Telegram</string>
+    <string name="twitter">Twitter</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Settings</string>
+    <string name="Home">Home</string>
+    <string name="communicate">Communicate</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because loaction permission is disabled</string>
+    <string name="pick_place">Choose a place</string>
+    <string name="option_get_place">Get Place</string>
+    <string name="name">Profile Name:-</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone no:-</string>
+    <string name="phone_number">Phone no.</string>
+    <string name="exit">Exit</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="nav_header_desc">header image</string>
+    <string name="nav_header_title">Username</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="trending_news">Trending news</string>
+    <string name="msg_no_notes">No categories found! Wait as we update them.</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+    <string name="general_tasks">General Tasks</string>
+    <string name="no_prevous_tansaction">No previous transaction yet</string>
+    <string name="button_text">Find Asset</string>
+    <string name="button_addAsset">Fill Task Form</string>
+    <string name="button_text2">Transfer</string>
+    <string name="button_text3">Syncronize</string>
+    <string name="category">Title</string>
+    <string name="date">Date</string>
+    <string-array name="hours">
+        <item>4:00 hrs</item>
+        <item>5:00 hrs</item>
+        <item>6:00 hrs</item>
+        <item>7:00 hrs</item>
+        <item>8:00 hrs</item>
+        <item>9:00 hrs</item>
+        <item>10:00 hrs</item>
+        <item>11:00 hrs</item>
+        <item>12:00 hrs</item>
+        <item>13:00 hrs</item>
+        <item>14:00 hrs</item>
+        <item>15:00 hrs</item>
+        <item>16:00 hrs</item>
+        <item>17:00 hrs</item>
+        <item>18:00 hrs</item>
+        <item>19:00 hrs</item>
+        <item>20:00 hrs</item>
+        <item>21:00 hrs</item>
+    </string-array>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+
+</resources>

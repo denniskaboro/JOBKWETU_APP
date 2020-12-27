@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/hmtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+<LinearLayout
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/hmtoolbar"
+    android:id="@+id/linear1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/categ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/background_black_bolder"
+        android:padding="5dp"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <Spinner
+        android:id="@+id/spn_category"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Service"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/spn_service"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:id="@+id/linear3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Jobber"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txt_worker"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+        android:hint="Select Jobber"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3"
+        android:id="@+id/linear8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/subcounty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Subcounty"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/spn_subcounty"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear8"
+        android:id="@+id/linear4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Location"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/locat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="address"
+            android:layout_weight="0.5"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:text="Please enter you exact address for the job above."
+        android:layout_below="@+id/linear4"
+        android:id="@+id/loctx"/>
+        <TextView
+            android:id="@+id/titl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loctx"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/titl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titl"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_black_bolder"
+            android:hint="Enter a title"
+            android:lines="2"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titl2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_black_bolder"
+        android:padding="5dp"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/descr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_black_bolder"
+        android:hint="Enter description of your work"
+        android:lines="5"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descr2"
+        android:id="@+id/linear5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black_bolder"
+            android:padding="5dp"
+            android:text="Work to be done from:-"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/work_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:hint="Select date"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linear5"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:elevation="6dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

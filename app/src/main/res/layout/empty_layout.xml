@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#EEEBEB"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/no_messo"
+        android:src="@drawable/ic_empty_messo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Messages"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/no_messo"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your inbox is Empty"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:id="@+id/empty_messo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/no_messo"/>
+
+</RelativeLayout>

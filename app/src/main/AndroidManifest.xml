@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.e.jobkwetu">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name=".Activity.OpenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home_Fragments.NotificationsFragment" />
+        <activity android:name=".Home_Fragments.Tasks_Fragment" />
+        <activity android:name=".Activity.FillTaskFormActivity" />
+        <activity android:name=".Activity.JobberFormActivity" />
+        <activity android:name=".Register_User.VerifyPhoneNoActivity" />
+        <activity android:name=".Register_User.ResetPasswordActivity" />
+        <activity android:name=".Register_User.RegisterActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activity.TransactionsActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:theme="@style/AppTheme.noactionbar" />
+        <activity android:name=".Register_User.LoginActivity">
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Activity.Profile_Activity" />
+        <activity android:name=".Activity.Settings_Activity" />
+        <activity android:name=".Activity.DetailedActivity" />
+        <activity android:name=".Activity.OrderActivity" />
+        <activity android:name=".Activity.MainChatActivity" />
+        <activity android:name=".Activity.ChatRoomActivity" />
+
+        <service android:name=".Services.GcmIntentService" />
+        <service android:name=".Services.MyGcmPushReceiver" />
+        <service android:name=".Services.NotificationService" />
+    </application>
+
+
+
+
+</manifest>

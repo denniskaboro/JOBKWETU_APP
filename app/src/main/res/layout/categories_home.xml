@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Services"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/textcolor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:text="SEE ALL"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/textcolor"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/popular_shine"
+            app:duration="800"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/popular_row"/>
+                <include layout="@layout/popular_row"/>
+                <include layout="@layout/popular_row"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="horizontal"
+            android:id="@+id/popular_recycler"/>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Newly Joined"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/textcolor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp"
+            android:text="SEE ALL"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/textcolor"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/newly_shine"
+            app:duration="800"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/newly_joined_row"/>
+                <include layout="@layout/newly_joined_row"/>
+                <include layout="@layout/newly_joined_row"/>
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:id="@+id/newly_joined_recycler"/>
+    </RelativeLayout>
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/backgroundColor"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardElevation="3dp"
+    android:layout_margin="@dimen/dimen_10"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:id="@+id/invite1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Invite friends and get upto ksh 100/="
+            android:textColor="@color/textcolor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_below="@+id/invite1"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:id="@+id/invite2"
+            android:text="Introduce your friends to the fastest way to get things done."
+            android:textColor="@color/textcolor"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:layout_below="@+id/invite2"
+            android:id="@+id/inviteBtn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:padding="@dimen/dimen_10"
+            android:background="@drawable/round_button"
+            android:layout_centerHorizontal="true"
+            android:text="Invite Friends"/>
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inspired by your browsing history"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/textcolor"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/inspired_shine"
+            app:duration="800"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/inspired_row"/>
+                <include layout="@layout/inspired_row"/>
+                <include layout="@layout/inspired_row"/>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:id="@+id/inspired_recycler"/>
+    </RelativeLayout>
+</LinearLayout>

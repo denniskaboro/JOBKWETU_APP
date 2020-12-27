@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEBEB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSAL TASKS"
+        android:textAlignment="center"
+        android:background="@drawable/background_black_bolder"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textSize="24sp"
+        android:id="@+id/headline"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/trending_list"
+        android:layout_below="@+id/headline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        />
+
+</RelativeLayout>

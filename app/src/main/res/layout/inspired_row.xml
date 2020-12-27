@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/backgroundColor"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="270dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/inspired_image"
+        android:background="@color/placeholder"
+        android:scaleType="fitXY"
+        android:contentDescription="Inspired image" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="2dp" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratting_star"
+            android:src="@drawable/ratting_star"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="4.8"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:id="@+id/inspired_ratting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_height="wrap_content"
+            android:hint="(20)"
+            android:id="@+id/inspired_numbered"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="2dp" />
+
+        <ImageView
+            android:id="@+id/inspired_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_gravity="end"
+            android:src="@drawable/favorite_grey" />
+    </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="2dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_margin="5dp"
+            android:id="@+id/inspired_description" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="2dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="date"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:id="@+id/inspired_cost" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

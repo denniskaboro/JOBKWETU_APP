@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/home_balance"
+        android:title="Ksh__/="
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_message"
+        android:title="Message" />
+    <item
+        android:id="@+id/home_about_us"
+        android:title="@string/about_us"
+        />
+    <item
+        android:id="@+id/home_contact_us"
+        android:title="@string/contact_us"
+        />
+    <item
+        android:id="@+id/home_disclaimer"
+        android:title="@string/disclaimer"
+        />
+    <item
+        android:id="@+id/home_privacy_policy"
+        android:title="@string/privacy_policy"
+        />
+    <item
+        android:id="@+id/home_treding_news"
+        android:title="@string/general_tasks"
+        />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+</menu>

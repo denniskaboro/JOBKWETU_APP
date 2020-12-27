@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.instrumentationassistant.UpdatesActivity"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_explore"
+            android:icon="@drawable/ic_explore"
+            android:title="Explore" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_account"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Social media" />
+            <item
+                android:id="@+id/nav_invite_friends"
+                android:icon="@drawable/ic_share"
+                android:title="Invite friends" />
+            <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/ic_web"
+                android:title="Our website" />
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_fb_icon"
+                android:title="@string/facebook_group" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_twitter_icon"
+                android:title="@string/twitter" />
+            <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_telegram"
+                android:title="@string/telegram_group" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_youtube3_icon"
+                android:title="Youtube" />
+            <item
+                android:id="@+id/nav_ratting"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+</menu>

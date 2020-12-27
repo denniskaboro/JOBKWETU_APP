@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.TransactionsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Transtoolbar2"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Transtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Toolbarcolor"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Transtoolbar2"
+        android:background="@drawable/background_black_bolder"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Balance"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/tv_price1"
+            android:layout_centerInParent="true"
+            android:hint="_________"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/text_color"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_price"
+            android:layout_margin="@dimen/dimen_10"
+            android:text="Deposit"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_deposit"
+            android:background="@drawable/round_button"
+            android:textSize="18sp"
+            android:padding="@dimen/dimen_10"
+            android:textColor="@color/colourgreen"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout"
+        android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_list"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"/>
+    </HorizontalScrollView>
+        <TextView
+            android:id="@+id/empty_notes_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textcolor"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="@dimen/margin_top_no_notes"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/no_prevous_tansaction"
+            android:textSize="@dimen/msg_no_notes" />
+
+</RelativeLayout>
